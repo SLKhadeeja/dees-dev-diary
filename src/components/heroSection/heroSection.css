@@ -1,0 +1,73 @@
+.hero-container {
+    background-image: url("../../assets/images/hero-image.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+
+nav {
+    padding: 0.5em;
+}
+
+.desktop-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+#blog-name {
+    font-size: 1.8em;
+    color: var(--headerTeal);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    padding: 0 5em;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.nav-item {
+    font-size: 1.2em;
+    margin: 1em;
+    color: var(--headerTeal);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: var(--gold);
+}
+
+.hero-quote {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 5em 0;
+    width: 36%;
+    text-align: center;
+}
+
+.personal-quote {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.primary-button-type {
+    background-color: var(--primaryTeal);
+    color: var(--white);
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.primary-button-type:hover {
+    background-color: var(--secondaryTeal);
+}
