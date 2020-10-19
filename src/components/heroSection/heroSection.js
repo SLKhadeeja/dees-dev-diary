@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="hero-container">
            <nav className="desktop-nav">
                <img id="logo" src={Logo} alt="diary logo" />
-               <ul className="nav-items">
+               <ul className="desktop-nav-items">
                    <li className="nav-item">
                        Home
                    </li>

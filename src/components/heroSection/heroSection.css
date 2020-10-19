@@ -19,7 +19,7 @@ nav {
     background-color: transparent;
 }
 
-.nav-items {
+.desktop-nav-items {
     display: flex;
     align-items: center;
     padding: 0 5em;
@@ -43,7 +43,6 @@ nav {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 5em 0;
     width: 36%;
     text-align: center;
 }
@@ -83,4 +82,18 @@ nav {
 
 .primary-button-type:hover {
     background-color: var(--secondaryColor);
+}
+
+@media screen and (max-width: 480px){
+    .desktop-nav-items {
+        display: none;
+    }
+
+    .introduction {
+        flex-flow: column;
+    }
+
+    .hero-quote {
+        width: 100%;
+    }
 }
