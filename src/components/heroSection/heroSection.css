@@ -1,5 +1,4 @@
 .hero-container {
-    background-image: url("../../assets/images/hero-image.jpg");
     height: 500px;
     background-repeat: no-repeat;
     background-size: 100% 500px;
@@ -9,19 +8,15 @@ nav {
     padding: 0.5em;
 }
 
+#logo {
+    width: 120px;
+}
+
 .desktop-nav {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-}
-
-#blog-name {
-    font-size: 1.8em;
-    color: var(--headerTeal);
-    text-transform: uppercase;
-    margin: 0;
 }
 
 .nav-items {
@@ -33,9 +28,9 @@ nav {
 }
 
 .nav-item {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 1em;
-    color: var(--headerTeal);
+    color: var(--headingColor);
     font-weight: 400;
     text-decoration: none;
 }
@@ -53,13 +48,31 @@ nav {
     text-align: center;
 }
 
-.personal-quote {
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile {
+    width: 300px;
+}
+
+@font-face {
+    font-family: cedarville;
+    src: url(../../assets/fonts/CedarvilleCursive-Regular.ttf);
+  }
+
+.intro-message {
     color: var(--white);
     font-size: 1.4rem;
+    margin: 20px 30px;
+    text-align: initial;
+    font-weight: 400;
 }
 
 .primary-button-type {
-    background-color: var(--primaryTeal);
+    background-color: var(--primaryColor);
     color: var(--white);
     width: 180px;
     height: 45px;
@@ -69,5 +82,5 @@ nav {
 }
 
 .primary-button-type:hover {
-    background-color: var(--secondaryTeal);
+    background-color: var(--secondaryColor);
 }

@@ -1,12 +1,13 @@
 import React from 'react';
 import "./heroSection.css";
-import heroImage from "../../images/hero-image.jpg"
+import Logo from "../../assets/images/logo.png";
+import ProfileImg from "../../assets/images/profile.jpg";
 
 const HeroSection = () => {
     return (
         <div className="hero-container">
            <nav className="desktop-nav">
-               <h1 id="blog-name">Dee's Dev Diary</h1>
+               <img id="logo" src={Logo} alt="diary logo" />
                <ul className="nav-items">
                    <li className="nav-item">
                        Home
@@ -22,13 +23,17 @@ const HeroSection = () => {
                    </li>
                </ul>
            </nav>
-           <div className="hero-quote">
-               <p className="personal-quote">
-                   Taking notes of little wins makes it easier to evaluate improvement
+           <div class="introduction">
+               <img id="profile" src={ProfileImg} alt="DeeDee" />
+               <div className="hero-quote">
+               <p className="intro-message">
+                   Hey, I am Khadija but you can call me DeeDee. This blog is a documentation of my journey through tech.
+                   I believe the documenting milestones and achievements makes it easier and certainly more fun to measure progress. 
                </p>
                <button className="primary-button-type">
-                   Read my diary 😉
+                   Read my diary <span role="img">😉</span>
                </button>
+           </div>
            </div>
         </div>
     )

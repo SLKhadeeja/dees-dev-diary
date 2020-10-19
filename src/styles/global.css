@@ -1,16 +1,18 @@
 :root {
-  --primaryTeal: #004c4c;
-  --secondaryTeal: #66b2b2;
-  --headerTeal: #006666;
+  --primaryColor:#008080;
+  --secondaryColor: #004040;
+  --headingColor: #017e7e;
   --gold: #daa520;
   --white: #fffafa;
-  --charcoalBlack: #242323;
-  --black: #111111;
+  --background: #121212;
+  --blackText: #111111;
+  --maroon: #400000;
+  --red: 	#800000;
 
 }
 
 html {
-    background-color: var(--charcoalBlack);
+    background-color: var(--background);
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
