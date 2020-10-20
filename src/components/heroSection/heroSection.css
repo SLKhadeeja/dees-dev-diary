@@ -1,4 +1,5 @@
 .hero-container {
+    background-image: url(../../assets/images/hero-image.png);
     height: 500px;
     background-repeat: no-repeat;
     background-size: 100% 500px;
@@ -39,43 +40,23 @@ nav {
     color: var(--gold);
 }
 
-.hero-quote {
+.hero-section {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 36%;
-    text-align: center;
 }
 
-.introduction {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#profile {
-    width: 300px;
-}
-
-@font-face {
-    font-family: cedarville;
-    src: url(../../assets/fonts/CedarvilleCursive-Regular.ttf);
-  }
-
-.intro-message {
-    color: var(--white);
-    font-size: 1.4rem;
-    margin: 20px 30px;
-    text-align: initial;
-    font-weight: 400;
+.hero-message {
+    font-size: 2.8rem;
+    color: var(--black);
 }
 
 .primary-button-type {
     background-color: var(--primaryColor);
     color: var(--white);
-    width: 180px;
+    width: 250px;
     height: 45px;
-    border: none;
+    border-color: var(--primaryColor);
     border-radius: 10px;
     font-size: 1em;
 }
@@ -84,16 +65,22 @@ nav {
     background-color: var(--secondaryColor);
 }
 
+.primary-button-type:focus {
+    outline: transparent;
+}
+
 @media screen and (max-width: 480px){
     .desktop-nav-items {
         display: none;
     }
 
-    .introduction {
-        flex-flow: column;
+    .hero-container {
+        background-image: url(../../assets/images/hero-image-mobile.png);
+        height: 400px;
     }
 
-    .hero-quote {
-        width: 100%;
+    .hero-message {
+        font-size: 2rem;
+        text-align: center;
     }
 }
