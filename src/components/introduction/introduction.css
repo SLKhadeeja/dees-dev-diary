@@ -1,5 +1,6 @@
 .introduction {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     margin: 50px auto;
 }
@@ -13,28 +14,58 @@
 #profile {
     width: 300px;
     border-radius: 5px;
+    border: 1px solid var(--primaryColor);
     box-shadow: -13px -8px 33px var(--boxShadowColor);
 }
 
 .hero-quote {
+    width: 300px;
     display: flex;
     flex-flow: column;
     align-items: center;
     text-align: center;
-    background-color: #fffafa88;
+    background-color: var(--black);
     position: absolute;
     bottom: 0%;
-    left: 44%;
+    left: 34%;
     border-radius: 5px;
+    border: 1px solid var(--primaryColor);
     box-shadow: -13px -8px 33px var(--boxShadowColor);
 }
 
 .intro-message {
-    color: var(--blackText);
+    color: var(--white);
     font-size: 1.2rem;
     margin: 20px 30px;
     text-align: initial;
     font-weight: 400;
+}
+
+.quote-banner {
+    border: 3px solid var(--primaryColor);
+    height: 200px;
+    width: 390px;
+    text-align: center;
+    display: flex;
+    font-size: 15px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 10px;
+}
+
+@font-face {
+    font-family: cedarville;
+    src: url(../../assets/fonts/CedarvilleCursive-Regular.ttf);
+}
+
+.quote-banner > p {
+    color: var(--white);
+    width: 20ch;
+    font-family: cedarville;
+    font-size: 1.1rem;
 }
 
 @media screen and (max-width: 480px){

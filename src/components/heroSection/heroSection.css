@@ -1,6 +1,6 @@
 .hero-container {
     background-image: url(../../assets/images/hero-image.png);
-    height: 500px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: 100% 500px;
 }
@@ -10,7 +10,11 @@ nav {
 }
 
 #logo {
-    width: 120px;
+    width: 100px;
+}
+
+.title {
+    color: var(--primaryColor);
 }
 
 .desktop-nav {
@@ -18,6 +22,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+}
+.desktop-nav > div {
+    display: flex;
+    align-items: center;
 }
 
 .desktop-nav-items {
@@ -40,6 +48,10 @@ nav {
     color: var(--gold);
 }
 
+/* .hamburger-menu {
+    display: none;
+} */
+
 .hero-section {
     display: flex;
     flex-flow: column;
@@ -48,7 +60,7 @@ nav {
 
 .hero-message {
     font-size: 2.8rem;
-    color: var(--black);
+    color: var(--white);
 }
 
 .primary-button-type {
@@ -74,9 +86,18 @@ nav {
         display: none;
     }
 
+    .hamburger-menu {
+        display: block;
+        color: var(--primaryColor);
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
     .hero-container {
-        background-image: url(../../assets/images/hero-image-mobile.png);
-        height: 400px;
+        height: 320px;
     }
 
     .hero-message {

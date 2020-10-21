@@ -1,7 +1,6 @@
 import React from "react"
-import HeroSection from "../components/heroSection/heroSection";
-import Introduction from "../components/introduction/introduction";
-
+import HeroSection from "../components/heroSection/heroSection"
+import Introduction from "../components/introduction/introduction"
 
 const Home = () => {
   return (
@@ -12,4 +11,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home
