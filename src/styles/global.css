@@ -9,14 +9,16 @@
   --maroon: #400000;
   --red: 	#800000;
   --boxShadowColor: #0080808c;
-
+  --grey: #222121;
 }
 
 html {
     background-color: var(--background);
+    margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
 body {
   margin: 0;
+  margin-bottom: 60px;
 }

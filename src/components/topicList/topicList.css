@@ -1,0 +1,13 @@
+.section-name {
+    color: var(--headingColor);
+    margin: 1em;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.diary-list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}

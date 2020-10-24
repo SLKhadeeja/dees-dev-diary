@@ -1,0 +1,17 @@
+.primary-button-type {
+    background-color: var(--primaryColor);
+    color: var(--white);
+    width: 250px;
+    height: 45px;
+    border-color: var(--primaryColor);
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.primary-button-type:hover {
+    background-color: var(--secondaryColor);
+}
+
+.primary-button-type:focus {
+    outline: transparent;
+}

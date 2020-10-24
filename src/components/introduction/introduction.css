@@ -3,33 +3,20 @@
     flex-flow: row wrap;
     align-items: center;
     margin: 50px auto;
+    justify-content: space-evenly;
 }
 
-.introduction-container {
-    position: relative;
-    margin: 0 50px;
-    width: 50%;
-}
-
-#profile {
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid var(--primaryColor);
-    box-shadow: -13px -8px 33px var(--boxShadowColor);
-}
 
 .hero-quote {
-    width: 300px;
+    height: 200px;
+    width: 390px;
     display: flex;
     flex-flow: column;
     align-items: center;
     text-align: center;
     background-color: var(--black);
-    position: absolute;
-    bottom: 0%;
-    left: 34%;
     border-radius: 5px;
-    border: 1px solid var(--primaryColor);
+    border: 3px solid var(--primaryColor);
     box-shadow: -13px -8px 33px var(--boxShadowColor);
 }
 
