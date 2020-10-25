@@ -1,0 +1,48 @@
+.profiles-container {
+    background-color: var(--secondaryColor);
+    color: var(--white);
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.profiles-container > ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.list-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons > p {
+    margin: 10px 8px;
+    font-size: 18px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+    height: 10%;
+}

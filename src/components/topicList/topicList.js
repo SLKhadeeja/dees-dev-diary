@@ -4,9 +4,9 @@ import "./topicList.css"
 
 const TopicList = () => {
   return (
-    <div class="diary-topics-section">
-      <h1 class="section-name">Diary Pages</h1>
-      <div class="diary-list">
+    <div className="diary-topics-section">
+      <h1 className="section-name">Diary Pages</h1>
+      <div className="diary-list">
         <DiaryPreviewCard />
       </div>
     </div>

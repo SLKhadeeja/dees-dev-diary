@@ -20,5 +20,10 @@ html {
 
 body {
   margin: 0;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin-bottom: 60px;
+  }
 }

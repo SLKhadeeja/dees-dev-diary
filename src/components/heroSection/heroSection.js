@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faHome,
   faBook,
+  faEnvelope,
   faUser,
-  faLock,
 } from "@fortawesome/free-solid-svg-icons"
 import Button from "../button/button"
 import "./heroSection.css"
 import Logo from "../../assets/images/logo.png"
 
-const HeroSection = () => {
+const HeroSection = ({show}) => {
   return (
     <div className="hero-container">
       <nav className="navbar">
@@ -26,10 +26,10 @@ const HeroSection = () => {
             <FontAwesomeIcon icon={faBook} /> <p>Articles</p>
           </li>
           <li className="nav-item">
-            <FontAwesomeIcon icon={faUser} /> <p>Profiles</p>
+            <FontAwesomeIcon icon={faEnvelope} /> <p>Contact me</p>
           </li>
-          <li className="nav-item">
-            <FontAwesomeIcon icon={faLock} /> <p>Privacy Policy</p>
+          <li className="nav-item profiles" onClick={show}>
+            <FontAwesomeIcon icon={faUser} /> <p>Profiles</p>
           </li>
         </ul>
       </nav>
