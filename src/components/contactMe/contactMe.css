@@ -1,0 +1,24 @@
+/* form {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+} */
+
+.inputs {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+}
+
+.text-input {
+    width: 60%;
+    height: 50px;
+    border: 4px solid var(--primaryColor);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.large {
+    height: 200px;
+}

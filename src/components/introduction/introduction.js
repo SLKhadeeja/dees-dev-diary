@@ -3,7 +3,7 @@ import "./introduction.css"
 
 const Introduction = () => {
   return (
-    <div className="introduction">
+    <div id="home" className="introduction">
       <div className="hero-quote">
         <p className="intro-message">
           Hey, I am Khadija but you can call me DeeDee. This blog is a

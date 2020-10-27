@@ -36,7 +36,7 @@ nav {
     list-style: none;
 }
 
-.nav-item {
+.nav-item, .nav-item > a {
     font-size: 1em;
     margin: 1em;
     color: var(--headingColor);
@@ -49,6 +49,11 @@ nav {
 
 .nav-item > p {
     margin: 0 5px;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    margin: 0;
 }
 
 .nav-item:hover {
@@ -86,7 +91,7 @@ nav {
         z-index: 9999;
     }
 
-    .nav-item {
+    .nav-item, .nav-item > a {
         color: var(--white);
         display: flex;
         flex-flow: column;
@@ -97,7 +102,7 @@ nav {
         display: flex;
     }
 
-    .nav-item > p {
+    .nav-item > p, .nav-item > a > p {
         margin: 5px 0;
     }
 

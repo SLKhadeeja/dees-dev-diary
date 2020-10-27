@@ -10,9 +10,9 @@ import Button from "../button/button"
 import "./heroSection.css"
 import Logo from "../../assets/images/logo.png"
 
-const HeroSection = ({show}) => {
+const HeroSection = ({ show }) => {
   return (
-    <div className="hero-container">
+    <div id="home" className="hero-container">
       <nav className="navbar">
         <div>
           <img id="logo" src={Logo} alt="diary logo" />
@@ -20,16 +20,22 @@ const HeroSection = ({show}) => {
         </div>
         <ul className="nav-items">
           <li className="nav-item">
-            <FontAwesomeIcon icon={faHome} /> <p>Home</p>
+            <a href="#home">
+              <FontAwesomeIcon icon={faHome} /> <p>Home</p>
+            </a>
           </li>
           <li className="nav-item">
-            <FontAwesomeIcon icon={faBook} /> <p>Articles</p>
+            <a href="#articles">
+              <FontAwesomeIcon icon={faBook} /> <p>Articles</p>
+            </a>
           </li>
           <li className="nav-item">
             <FontAwesomeIcon icon={faEnvelope} /> <p>Contact me</p>
           </li>
-          <li className="nav-item profiles" onClick={show}>
-            <FontAwesomeIcon icon={faUser} /> <p>Profiles</p>
+          <li className="nav-item profiles">
+            <a href="#profiles" onClick={show} onKeyDown={show}>
+              <FontAwesomeIcon icon={faUser} /> <p>Profiles</p>
+            </a>
           </li>
         </ul>
       </nav>
