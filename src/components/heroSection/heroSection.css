@@ -31,7 +31,7 @@ nav {
 .nav-items {
     display: flex;
     align-items: center;
-    padding: 0 5em;
+    padding: 0 15em;
     margin: 10px 0;
     list-style: none;
 }
@@ -47,7 +47,7 @@ nav {
     align-items: center;
 }
 
-.nav-item > p {
+.nav-item > a > p {
     margin: 0 5px;
 }
 
@@ -73,6 +73,7 @@ nav {
 .hero-message {
     font-size: 2.8rem;
     color: var(--white);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 480px){

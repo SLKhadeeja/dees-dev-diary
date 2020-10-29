@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 :root {
   --primaryColor:#008080;
   --secondaryColor: #004040;
@@ -15,11 +17,16 @@
 html {
     background-color: var(--background);
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
   }
 
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .section-name {
@@ -27,6 +34,7 @@ body {
   margin: 1em;
   font-size: 2em;
   text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 480px) {

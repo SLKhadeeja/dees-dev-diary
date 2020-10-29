@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faHome,
   faBook,
-  faEnvelope,
   faUser,
 } from "@fortawesome/free-solid-svg-icons"
 import Button from "../button/button"
@@ -28,9 +27,6 @@ const HeroSection = ({ show }) => {
             <a href="#articles">
               <FontAwesomeIcon icon={faBook} /> <p>Articles</p>
             </a>
-          </li>
-          <li className="nav-item">
-            <FontAwesomeIcon icon={faEnvelope} /> <p>Contact me</p>
           </li>
           <li className="nav-item profiles">
             <a href="#profiles" onClick={show} onKeyDown={show}>

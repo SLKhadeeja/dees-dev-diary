@@ -27,21 +27,31 @@ const Profiles = ({ hide }) => {
       </div>
       <div className="list">
         <p className="list-item">
-          <FontAwesomeIcon icon={faEnvelope} /> khadijaladan67@gmail.com
+          <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1" target="_blank">
+            <FontAwesomeIcon icon={faEnvelope} /> khadijaladan67@gmail.com{" "}
+          </a>
         </p>
         <div className="list-item">
           <div className="icons">
             <p>
-              <FontAwesomeIcon icon={faTwitter} />
+              <a href="https://twitter.com/SLKhadeeja" target="_blank">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
             </p>
             <p>
-              <FontAwesomeIcon icon={faGithub} />
+              <a href="https://gihub.com/SLKhadeeja" target="_blank">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
             </p>
             <p>
-              <FontAwesomeIcon icon={faMedium} />
+              <a href="https://medium.com/@SLKhadeeja" target="_blank">
+                <FontAwesomeIcon icon={faMedium} />
+              </a>
             </p>
             <p>
-              <FontAwesomeIcon icon={faDev} />
+              <a href="https://dev.to/slkhadeeja" target="_blank">
+                <FontAwesomeIcon icon={faDev} />
+              </a>
             </p>
           </div>
           @SLKhadeeja
@@ -49,16 +59,22 @@ const Profiles = ({ hide }) => {
         <div className="list-item">
           <div className="icons">
             <p>
-              <FontAwesomeIcon icon={faLinkedin} />
+              <a href="https://www.linkedin.com/in/khadija-ladan/" target="_blank">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
             </p>
             <p>
-              <FontAwesomeIcon icon={faFacebook} />
+              <a href="https://web.facebook.com/khadijah.ladan.9" target="_blank">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
             </p>
           </div>
           Khadija Ladan
         </div>
         <p className="list-item">
-          <FontAwesomeIcon icon={faInstagram} /> _deedee_l
+          <a href="https://www.instagram.com/_deedee_l/" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} /> _deedee_l
+          </a>
         </p>
       </div>
     </div>

@@ -14,7 +14,7 @@ const DiaryPreviewCard = () => {
           An inside story on how I started out in tech. The beginning of my
           journey as a developer
         </p>
-        <Button>Read this</Button>
+        <Button>Read more</Button>
       </div>
     </div>
   )

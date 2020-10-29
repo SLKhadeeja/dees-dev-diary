@@ -10,41 +10,56 @@ import {
   faMedium,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faBook, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => {
   return (
     <footer>
       <ul className="nav">
-        <li>Home</li>
-        <li>Articles</li>
-        <li>Contact Me</li>
+        <li><a href="#home"><FontAwesomeIcon icon={faHome} /> Home</a></li>
+        <li><a href="#articles"><FontAwesomeIcon icon={faBook} /> Articles</a></li>
       </ul>
 
       <ul>
         <li>
-          <FontAwesomeIcon icon={faEnvelope} />
+          <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1" target="_blank">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faTwitter} />
+          <a href="https://twitter.com/SLKhadeeja" target="_blank">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faGithub} />
+          <a href="https://gihub.com/SLKhadeeja" target="_blank">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a href="https://www.linkedin.com/in/khadija-ladan/" target="_blank">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faInstagram} />
+          <a href="https://www.instagram.com/_deedee_l/" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faMedium} />
+          <a href="https://medium.com/@SLKhadeeja" target="_blank">
+            <FontAwesomeIcon icon={faMedium} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faFacebook} />
+          <a href="https://web.facebook.com/khadijah.ladan.9" target="_blank">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faDev} />
+          <a href="https://dev.to/slkhadeeja" target="_blank">
+            <FontAwesomeIcon icon={faDev} />
+          </a>
         </li>
       </ul>
     </footer>
