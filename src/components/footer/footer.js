@@ -16,13 +16,24 @@ const Footer = () => {
   return (
     <footer>
       <ul className="nav">
-        <li><a href="#home"><FontAwesomeIcon icon={faHome} /> Home</a></li>
-        <li><a href="#articles"><FontAwesomeIcon icon={faBook} /> Articles</a></li>
+        <li>
+          <a href="#home">
+            <FontAwesomeIcon icon={faHome} /> Home
+          </a>
+        </li>
+        <li>
+          <a href="#articles">
+            <FontAwesomeIcon icon={faBook} /> Articles
+          </a>
+        </li>
       </ul>
 
       <ul>
         <li>
-          <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1" target="_blank">
+          <a
+            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>

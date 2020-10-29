@@ -27,7 +27,10 @@ const Profiles = ({ hide }) => {
       </div>
       <div className="list">
         <p className="list-item">
-          <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1" target="_blank">
+          <a
+            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faEnvelope} /> khadijaladan67@gmail.com{" "}
           </a>
         </p>
@@ -59,12 +62,18 @@ const Profiles = ({ hide }) => {
         <div className="list-item">
           <div className="icons">
             <p>
-              <a href="https://www.linkedin.com/in/khadija-ladan/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/khadija-ladan/"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </p>
             <p>
-              <a href="https://web.facebook.com/khadijah.ladan.9" target="_blank">
+              <a
+                href="https://web.facebook.com/khadijah.ladan.9"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </p>

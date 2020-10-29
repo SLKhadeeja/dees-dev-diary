@@ -6,10 +6,12 @@ const Introduction = () => {
     <div id="home" className="introduction">
       <div className="hero-quote">
         <p className="intro-message">
-          Hey, I am Khadija but you can call me DeeDee. This blog is a
-          documentation of my journey through tech. I believe the documenting
-          milestones and achievements makes it easier and certainly more fun to
-          measure progress.
+          Hey there{" "}
+          <span role="img" aria-label="wink">
+            😸
+          </span>{" "}
+          , I'm DeeDee. I believe documenting milestones and achievements makes
+          it easier and certainly more fun to measure progress.
         </p>
       </div>
       <div className="quote-banner">

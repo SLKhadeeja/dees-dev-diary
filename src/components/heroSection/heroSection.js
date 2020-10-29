@@ -1,10 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faHome,
-  faBook,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons"
+import { faHome, faBook, faUser } from "@fortawesome/free-solid-svg-icons"
 import Button from "../button/button"
 import "./heroSection.css"
 import Logo from "../../assets/images/logo.png"
