@@ -10,24 +10,11 @@ import {
   faMedium,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
-import { faBook, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
-const Footer = () => {
+const DiaryPageFooter = () => {
   return (
-    <footer>
-      <ul className="nav">
-        <li>
-          <a href="#home">
-            <FontAwesomeIcon icon={faHome} /> Home
-          </a>
-        </li>
-        <li>
-          <a href="#articles">
-            <FontAwesomeIcon icon={faBook} /> Articles
-          </a>
-        </li>
-      </ul>
-
+    <footer class="diary-footer">
       <ul>
         <li>
           <a
@@ -102,4 +89,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default DiaryPageFooter

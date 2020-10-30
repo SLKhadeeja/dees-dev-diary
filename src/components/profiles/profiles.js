@@ -30,6 +30,7 @@ const Profiles = ({ hide }) => {
           <a
             href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faEnvelope} /> khadijaladan67@gmail.com{" "}
           </a>
@@ -37,22 +38,38 @@ const Profiles = ({ hide }) => {
         <div className="list-item">
           <div className="icons">
             <p>
-              <a href="https://twitter.com/SLKhadeeja" target="_blank">
+              <a
+                href="https://twitter.com/SLKhadeeja"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
             </p>
             <p>
-              <a href="https://github.com/SLKhadeeja" target="_blank">
+              <a
+                href="https://github.com/SLKhadeeja"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </p>
             <p>
-              <a href="https://medium.com/@SLKhadeeja" target="_blank">
+              <a
+                href="https://medium.com/@SLKhadeeja"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faMedium} />
               </a>
             </p>
             <p>
-              <a href="https://dev.to/slkhadeeja" target="_blank">
+              <a
+                href="https://dev.to/slkhadeeja"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faDev} />
               </a>
             </p>
@@ -65,6 +82,7 @@ const Profiles = ({ hide }) => {
               <a
                 href="https://www.linkedin.com/in/khadija-ladan/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -73,6 +91,7 @@ const Profiles = ({ hide }) => {
               <a
                 href="https://web.facebook.com/khadijah.ladan.9"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
@@ -81,7 +100,11 @@ const Profiles = ({ hide }) => {
           Khadija Ladan
         </div>
         <p className="list-item">
-          <a href="https://www.instagram.com/_deedee_l/" target="_blank">
+          <a
+            href="https://www.instagram.com/_deedee_l/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} /> _deedee_l
           </a>
         </p>

@@ -5,6 +5,10 @@ footer {
     background-color: var(--primaryColor);
 }
 
+.diary-footer {
+    display: none;
+}
+
 ul {
     display: flex;
     align-items: center;
@@ -28,6 +32,10 @@ li:hover {
     footer {
         flex-flow: column;
         display: none;
+    }
+
+    .diary-footer {
+        display: initial;
     }
 
     ul {

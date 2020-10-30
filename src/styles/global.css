@@ -12,16 +12,17 @@
   --red: 	#800000;
   --boxShadowColor: #0080808c;
   --grey: #222121;
+  --paperBrown: #f8f3ed;
 }
 
 html {
-    background-color: var(--background);
     margin: 0;
     font-family: 'Poppins', sans-serif;
   }
 
 body {
   margin: 0;
+  background-color: var(--background);
 }
 
 a {
@@ -36,8 +37,19 @@ a {
   text-transform: uppercase;
 }
 
+.diary-page {
+  background-color: var(--paperBrown);
+  padding-top: 60px;
+
+}
+
 @media screen and (max-width: 480px) {
   body {
     margin-bottom: 60px;
   }
+
+  .diary-page {
+    padding-top: 30px;
+  }
 }
+

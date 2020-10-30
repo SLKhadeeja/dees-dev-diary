@@ -1,0 +1,32 @@
+.diary-header {
+    padding: 30px 100px;
+    padding-bottom: 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+hr {
+    width: 50%;
+    text-align: left;
+    margin-left: 0;
+    border-color: var(--primaryColor);
+}
+
+.main-header {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .diary-header {
+        padding: 30px;
+        padding-bottom: 0;
+    }
+
+    hr {
+        width: 100%;
+    }
+}

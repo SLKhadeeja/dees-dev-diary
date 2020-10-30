@@ -2,6 +2,7 @@ import React from "react"
 import "./diaryPreviewCard.css"
 import CardImage from "../../assets/images/baby-steps-into-tech.jpg"
 import Button from "../button/button"
+import { Link } from "gatsby"
 
 const DiaryPreviewCard = () => {
   return (
@@ -14,7 +15,9 @@ const DiaryPreviewCard = () => {
           An inside story on how I started out in tech. The beginning of my
           journey as a developer
         </p>
-        <Button>Read more</Button>
+        <Link to="/diaryPage">
+          <Button>Read more</Button>
+        </Link>
       </div>
     </div>
   )

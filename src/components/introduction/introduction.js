@@ -10,8 +10,8 @@ const Introduction = () => {
           <span role="img" aria-label="wink">
             😸
           </span>{" "}
-          , I'm DeeDee. I believe documenting milestones and achievements makes
-          it easier and certainly more fun to measure progress.
+          , I'm DeeDee. Noting down achievements makes it easier and certainly
+          more fun to measure progress.
         </p>
       </div>
       <div className="quote-banner">
