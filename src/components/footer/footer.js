@@ -43,7 +43,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="https://gihub.com/SLKhadeeja" target="_blank">
+          <a href="https://github.com/SLKhadeeja" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>

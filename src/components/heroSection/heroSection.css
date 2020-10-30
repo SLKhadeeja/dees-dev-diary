@@ -73,7 +73,6 @@ nav {
 .hero-message {
     font-size: 2.8rem;
     color: var(--white);
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 480px){
@@ -116,7 +115,7 @@ nav {
     }
 
     .hero-message {
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-align: center;
     }
 }

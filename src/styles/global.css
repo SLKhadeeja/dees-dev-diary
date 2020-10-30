@@ -34,7 +34,6 @@ a {
   margin: 1em;
   font-size: 2em;
   text-transform: uppercase;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 480px) {
