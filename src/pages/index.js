@@ -9,7 +9,7 @@ import useModal from "../utils/useModal"
 const Home = () => {
   const { isShowing, toggle } = useModal()
   return (
-    <div>
+    <div className="index-page">
       <HeroSection show={toggle} />
       <Introduction />
       <TopicList />

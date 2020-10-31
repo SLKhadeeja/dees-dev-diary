@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHome, faBook, faUser } from "@fortawesome/free-solid-svg-icons"
 import Button from "../button/button"
 import "./heroSection.css"
-import Logo from "../../assets/images/logo.png"
+// import Logo from "../../assets/images/logo.png"
 
 const HeroSection = ({ show }) => {
   return (
     <div id="home" className="hero-container">
       <nav className="navbar">
         <div>
-          <img id="logo" src={Logo} alt="diary logo" />
+          {/* <img id="logo" src={Logo} alt="diary logo" /> */}
           <h1 className="title">DEE'S DEV DIARY</h1>
         </div>
         <ul className="nav-items">

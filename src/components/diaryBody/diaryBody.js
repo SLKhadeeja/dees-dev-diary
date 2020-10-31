@@ -1,5 +1,5 @@
-import React from "react";
-import "./diaryBody.css";
+import React from "react"
+import "./diaryBody.css"
 
 const DiaryBody = () => {
   return (

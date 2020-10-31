@@ -1,6 +1,10 @@
 .diary-header {
     padding: 30px 100px;
     padding-bottom: 0;
+    position: fixed;
+    background-color: var(--paperBrown);
+    width: 100%;
+    top: 0;
 }
 
 h3 {
@@ -17,16 +21,47 @@ hr {
 }
 
 .main-header {
+    width: 80%;
     margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links > svg {
+    width: 30;
+}
+
+.diary-nav-item {
+    margin: 0 20px;
+    width: 30px;
+    font-size: 1.5em;
+    color: var(--primaryColor);
+}
+
+.diary-nav-item:hover {
+    color: var(--gold);
 }
 
 @media screen and (max-width: 480px) {
     .diary-header {
-        padding: 30px;
+        padding: 10px;
         padding-bottom: 0;
     }
 
     hr {
         width: 100%;
+    }
+
+    .diary-nav-item {
+        font-size: 1em;
+        width: 20px;
+        display: flex;
+        margin: 0 10px;
     }
 }

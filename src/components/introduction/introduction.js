@@ -10,7 +10,7 @@ const Introduction = () => {
           <span role="img" aria-label="wink">
             😸
           </span>{" "}
-          , I'm DeeDee. Noting down achievements makes it easier and certainly
+          , I'm DeeDee. <br/> Noting down achievements makes it easier and certainly
           more fun to measure progress.
         </p>
       </div>

@@ -1,4 +1,4 @@
-footer {
+footer, .diary-footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -35,7 +35,7 @@ li:hover {
     }
 
     .diary-footer {
-        display: initial;
+        display: flex;
     }
 
     ul {

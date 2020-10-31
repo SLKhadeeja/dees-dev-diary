@@ -3,6 +3,8 @@
     height: 400px;
     background-repeat: no-repeat;
     background-size: 100% 500px;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
@@ -15,14 +17,19 @@ nav {
 
 .title {
     color: var(--primaryColor);
+    margin: 0.8em 1em;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: var(--background);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
+
 .navbar > div {
     display: flex;
     align-items: center;
@@ -68,6 +75,7 @@ nav {
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 150px;
 }
 
 .hero-message {
@@ -76,6 +84,10 @@ nav {
 }
 
 @media screen and (max-width: 480px){
+    .navbar {
+        justify-content: center;
+    }
+
     .nav-items {
         position: fixed;
         bottom: 0;
@@ -107,7 +119,8 @@ nav {
     }
 
     .title {
-        font-size: 1em;
+        font-size: 1.2em;
+        margin: 0;
     }
 
     .hero-container {

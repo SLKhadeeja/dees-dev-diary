@@ -25,6 +25,18 @@ body {
   background-color: var(--background);
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -44,7 +56,7 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-  body {
+  .index-page {
     margin-bottom: 60px;
   }
 
