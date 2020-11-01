@@ -23,6 +23,10 @@ h2 {
     line-height: 50px;
 }
 
+.header-img {
+    width: 100%;
+}
+
 @media screen and (max-width: 480px) {
     .diary-body {
         padding: 0 50px;

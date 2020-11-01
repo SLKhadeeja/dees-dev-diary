@@ -33,12 +33,14 @@ const HeroSection = ({ show }) => {
       </nav>
       <div className="hero-section">
         <h3 className="hero-message">Documenting Milestones</h3>
+        <a href="#articles">
         <Button>
           Read my diary{" "}
           <span role="img" aria-label="wink">
             😉
           </span>
         </Button>
+        </a>
       </div>
     </div>
   )

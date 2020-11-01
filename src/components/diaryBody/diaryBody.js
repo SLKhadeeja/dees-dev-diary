@@ -1,10 +1,12 @@
 import React from "react"
+import CardImage from "../../assets/images/baby-steps-into-tech.jpg"
 import "./diaryBody.css"
 
 const DiaryBody = () => {
   return (
     <div className="diary-body">
       <h2>My baby steps into tech</h2>
+      <img className="header-img" src={CardImage} alt="baby-using-laptop" />
       <h5>About me</h5>
       <p>
         I am a software developer and a graduate of computer engineering. When
