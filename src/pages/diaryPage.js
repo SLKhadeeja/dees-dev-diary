@@ -1,8 +1,8 @@
-import React from "react"
-import DiaryPageHeader from "../components/diaryPageHeader/diaryPageHeader"
-import DiaryBody from "../components/diaryBody/diaryBody"
-import Footer from "../components/footer/footer"
-import DiaryPageFooter from "../components/footer/diaryPageFooter"
+import React from "react";
+import DiaryPageHeader from "../components/headers/diaryPageHeader/diaryPageHeader";
+import DiaryBody from "../components/diaryBody/diaryBody";
+import Footer from "../components/footer/footer";
+import DiaryPageFooter from "../components/footer/diaryPageFooter";
 
 const DiaryPage = () => {
   return (
@@ -12,7 +12,7 @@ const DiaryPage = () => {
       <Footer />
       <DiaryPageFooter />
     </div>
-  )
-}
+  );
+};
 
-export default DiaryPage
+export default DiaryPage;

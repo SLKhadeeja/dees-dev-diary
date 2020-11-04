@@ -1,6 +1,6 @@
-import React from "react"
-import CardImage from "../../assets/images/baby-steps-into-tech.jpg"
-import "./diaryBody.css"
+import React from "react";
+import CardImage from "../../assets/images/baby-steps-into-tech.jpg";
+import "./diaryBody.css";
 
 const DiaryBody = () => {
   return (
@@ -48,7 +48,7 @@ const DiaryBody = () => {
         level.😊
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default DiaryBody
+export default DiaryBody;

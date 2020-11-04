@@ -1,6 +1,6 @@
-import React from "react"
-import "./footer.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react";
+import "./footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDev,
   faFacebook,
@@ -9,8 +9,8 @@ import {
   faLinkedin,
   faMedium,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const DiaryPageFooter = () => {
   return (
@@ -86,7 +86,7 @@ const DiaryPageFooter = () => {
         </li>
       </ul>
     </footer>
-  )
-}
+  );
+};
 
-export default DiaryPageFooter
+export default DiaryPageFooter;

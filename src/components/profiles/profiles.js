@@ -1,5 +1,5 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDev,
   faFacebook,
@@ -8,9 +8,9 @@ import {
   faLinkedin,
   faMedium,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope, faTimes } from "@fortawesome/free-solid-svg-icons"
-import "./profiles.css"
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faTimes } from "@fortawesome/free-solid-svg-icons";
+import "./profiles.css";
 
 const Profiles = ({ hide }) => {
   return (
@@ -110,7 +110,7 @@ const Profiles = ({ hide }) => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Profiles
+export default Profiles;

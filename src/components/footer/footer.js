@@ -1,6 +1,6 @@
-import React from "react"
-import "./footer.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react";
+import "./footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDev,
   faFacebook,
@@ -9,22 +9,23 @@ import {
   faLinkedin,
   faMedium,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons"
-import { faBook, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons"
+} from "@fortawesome/free-brands-svg-icons";
+import { faBook, faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "gatsby";
 
 const Footer = () => {
   return (
     <footer>
       <ul className="nav">
         <li>
-          <a href="#home">
+          <Link to="/">
             <FontAwesomeIcon icon={faHome} /> Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#articles">
+          <Link to="/articleList">
             <FontAwesomeIcon icon={faBook} /> Articles
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -99,7 +100,7 @@ const Footer = () => {
         </li>
       </ul>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

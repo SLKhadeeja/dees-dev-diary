@@ -1,20 +1,20 @@
 import React from "react";
-import HeroSection from "../components/heroSection/heroSection";
-import Introduction from "../components/introduction/introduction";
+import TopicList from "../components/topicList/topicList";
 import Footer from "../components/footer/footer";
 import Profiles from "../components/profiles/profiles";
 import useModal from "../utils/useModal";
+import Header from "../components/headers/header/header";
 
-const Home = () => {
+const ArticleList = () => {
   const { isShowing, toggle } = useModal();
   return (
     <div className="index-page">
-      <HeroSection show={toggle} />
-      <Introduction />
+      <Header />
+      <TopicList />
       {isShowing && <Profiles hide={toggle} />}
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default ArticleList;

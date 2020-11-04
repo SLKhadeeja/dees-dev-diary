@@ -6,32 +6,7 @@
     justify-content: space-evenly;
 }
 
-
-.hero-quote {
-    height: 200px;
-    width: 390px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-    background-color: var(--black);
-    border-radius: 5px;
-    border: 3px solid var(--primaryColor);
-    box-shadow: -13px -8px 33px var(--boxShadowColor);
-}
-
-.intro-message {
-    color: var(--white);
-    font-size: 1rem;
-    margin: 20px 30px;
-    text-align: initial;
-    font-weight: 400;
-}
-
 .quote-banner {
-    border: 3px solid var(--primaryColor);
-    height: 200px;
-    width: 390px;
     text-align: center;
     display: flex;
     font-size: 15px;
@@ -50,9 +25,8 @@
 
 .quote-banner > p {
     color: var(--white);
-    width: 20ch;
     font-family: cedarville;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
 }
 
 @media screen and (max-width: 480px){

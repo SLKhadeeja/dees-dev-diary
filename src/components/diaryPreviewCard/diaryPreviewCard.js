@@ -1,8 +1,8 @@
-import React from "react"
-import "./diaryPreviewCard.css"
-import CardImage from "../../assets/images/baby-steps-into-tech.jpg"
-import Button from "../button/button"
-import { Link } from "gatsby"
+import React from "react";
+import "./diaryPreviewCard.css";
+import CardImage from "../../assets/images/baby-steps-into-tech.jpg";
+import Button from "../button/button";
+import { Link } from "gatsby";
 
 const DiaryPreviewCard = () => {
   return (
@@ -20,7 +20,7 @@ const DiaryPreviewCard = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DiaryPreviewCard
+export default DiaryPreviewCard;
