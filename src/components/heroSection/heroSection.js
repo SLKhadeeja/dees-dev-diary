@@ -1,10 +1,9 @@
 import React from "react";
-import { faHome, faBook, faUser } from "@fortawesome/free-solid-svg-icons";
 import Button from "../button/button";
 import Header from "../headers/header/header";
 import "./heroSection.css";
 
-const HeroSection = ({ show }) => {
+const HeroSection = () => {
   return (
     <div id="home" className="hero-container">
       <Header />

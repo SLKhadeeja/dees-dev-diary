@@ -57,6 +57,10 @@ a {
 
 }
 
+.post-list {
+  padding: 100px 0;
+}
+
 @media screen and (max-width: 480px) {
   .index-page {
     margin-bottom: 60px;
@@ -64,6 +68,10 @@ a {
 
   .diary-page {
     padding-top: 30px;
+  }
+
+  .post-list {
+    padding: 50px 0;
   }
 }
 

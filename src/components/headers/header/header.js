@@ -12,12 +12,12 @@ const Header = ({ show }) => {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <Link href="/">
+          <Link to="/">
             <FontAwesomeIcon icon={faHome} /> <p>Home</p>
           </Link>
         </li>
         <li className="nav-item">
-          <Link href="/articleList">
+          <Link to="/articleList">
             <FontAwesomeIcon icon={faBook} /> <p>Articles</p>
           </Link>
         </li>

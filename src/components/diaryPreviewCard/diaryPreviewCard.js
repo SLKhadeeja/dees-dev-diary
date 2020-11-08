@@ -4,17 +4,15 @@ import CardImage from "../../assets/images/baby-steps-into-tech.jpg";
 import Button from "../button/button";
 import { Link } from "gatsby";
 
-const DiaryPreviewCard = () => {
+const DiaryPreviewCard = props => {
+  const { date, title, description } = props;
   return (
     <div className="card">
-      <div className="date">19 Jun, 2020</div>
+      <div className="date">{date}</div>
       <img className="preview-img" src={CardImage} alt="baby-using-laptop" />
       <div className="card-contents">
-        <h3 className="card-title">My baby steps into tech</h3>
-        <p className="diary-preview">
-          An inside story on how I started out in tech. The beginning of my
-          journey as a developer
-        </p>
+        <h3 className="card-title">{title}</h3>
+        <p className="diary-preview">{description}</p>
         <Link to="/diaryPage">
           <Button>Read more</Button>
         </Link>
