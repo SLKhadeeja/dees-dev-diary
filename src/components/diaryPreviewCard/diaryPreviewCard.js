@@ -1,19 +1,19 @@
 import React from "react";
 import "./diaryPreviewCard.css";
-import CardImage from "../../assets/images/baby-steps-into-tech.jpg";
 import Button from "../button/button";
 import { Link } from "gatsby";
 
 const DiaryPreviewCard = props => {
-  const { date, title, description } = props;
+  const { date, title, description, slug, coverImage } = props;
+  var CardImage = require(`../../assets/images/${coverImage}`);
   return (
     <div className="card">
       <div className="date">{date}</div>
-      <img className="preview-img" src={CardImage} alt="baby-using-laptop" />
+      <img className="preview-img" src={CardImage} alt={`${coverImage}`} />
       <div className="card-contents">
         <h3 className="card-title">{title}</h3>
         <p className="diary-preview">{description}</p>
-        <Link to="/diaryPage">
+        <Link to={slug}>
           <Button>Read more</Button>
         </Link>
       </div>

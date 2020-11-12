@@ -7,6 +7,7 @@
     position: relative;
     border: 1px solid var(--secondaryColor);
     border-radius: 10px;
+    height: 430px;
 }
 
 .date {
@@ -34,9 +35,10 @@
 .card-contents {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    justify-content: space-between;
     text-align: center;
     padding: 20px;
+    height: 200px;
 }
 
 .diary-preview {

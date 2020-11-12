@@ -10,12 +10,16 @@ export const pageQuery = graphql`
   query MyQuery {
     diary: allMarkdownRemark {
       posts: nodes {
+          fields {
+            slug
+          }
         frontmatter {
           id
           date
           title
           author
           description
+          coverImage
         }
       }
     }
@@ -29,13 +33,15 @@ const ArticleList = ({ data }) => {
   return (
     <div className="index-page">
       <Header show={toggle} />
-      <div className="post-list">
+      <div className="article-list">
         {posts.map(post => (
           <DiaryPreviewCard
             key={post.frontmatter.id}
+            coverImage={post.frontmatter.coverImage}
             title={post.frontmatter.title}
             date={post.frontmatter.date}
             description={post.frontmatter.description}
+            slug={post.fields.slug}
           />
         ))}
       </div>

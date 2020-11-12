@@ -19,5 +19,11 @@ module.exports = {
         plugins: [], // just in case those previously mentioned remark plugins sound cool :)
       },
     },
+    {
+      resolve: `gatsby-remark-shiki`,
+      options: {
+        theme: 'zeit', // Default: 'nord'
+      },
+    },
   ],
 };

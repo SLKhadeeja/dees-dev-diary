@@ -6,7 +6,7 @@ import Footer from "../components/footer/footer";
 import DiaryPageFooter from "../components/footer/diaryPageFooter";
 
 export const query = graphql`
-  query BlogQuery($slug: String!) {
+  query BlogQuery($slug: String!) { 
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -14,16 +14,16 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
 const DiaryPage = ({ data }) => {
-  // const post = data.markdownRemark;
+  const post = data.markdownRemark;
   console.log(data);
 
   return (
     <div className="diary-page">
       <DiaryPageHeader />
-      {/* <DiaryBody title={post.frontmatter.title} html={{ __html: post.html }} /> */}
+      <DiaryBody title={post.frontmatter.title} html={{ __html: post.html }} />
       <Footer />
       <DiaryPageFooter />
     </div>

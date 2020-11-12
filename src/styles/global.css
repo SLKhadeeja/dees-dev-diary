@@ -61,6 +61,14 @@ a {
   padding: 100px 0;
 }
 
+.article-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 @media screen and (max-width: 480px) {
   .index-page {
     margin-bottom: 60px;
