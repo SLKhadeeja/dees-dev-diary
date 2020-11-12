@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 import DiaryPageHeader from "../components/headers/diaryPageHeader/diaryPageHeader";
 import DiaryBody from "../components/diaryBody/diaryBody";
 import Footer from "../components/footer/footer";
@@ -22,6 +23,7 @@ const DiaryPage = ({ data }) => {
 
   return (
     <div className="diary-page">
+      <Helmet title={`Dee's Dev Diary - ${post.frontmatter.title}`} defer={false} />
       <DiaryPageHeader />
       <DiaryBody title={post.frontmatter.title} html={{ __html: post.html }} />
       <Footer />

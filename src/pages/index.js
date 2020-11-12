@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import HeroSection from "../components/heroSection/heroSection";
 import Introduction from "../components/introduction/introduction";
 import Footer from "../components/footer/footer";
@@ -9,6 +10,7 @@ const Home = () => {
   const { isShowing, toggle } = useModal();
   return (
     <div className="index-page">
+      <Helmet title="Dee's Dev Diary" defer={false} />
       <HeroSection show={toggle} />
       <Introduction />
       {isShowing && <Profiles hide={toggle} />}
