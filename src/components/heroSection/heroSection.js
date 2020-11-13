@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import Button from "../button/button";
 import Header from "../headers/header/header";
 import "./heroSection.css";
@@ -9,14 +10,14 @@ const HeroSection = () => {
       <Header />
       <div className="hero-section">
         <h3 className="hero-message">Documenting Milestones</h3>
-        <a href="#articles">
+        <Link to="/articleList">
           <Button>
             Read my diary{" "}
             <span role="img" aria-label="wink">
               😉
             </span>
           </Button>
-        </a>
+        </Link>
       </div>
     </div>
   );

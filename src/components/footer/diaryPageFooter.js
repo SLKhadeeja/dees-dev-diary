@@ -14,9 +14,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const DiaryPageFooter = () => {
   return (
-    <footer class="diary-footer">
+    <footer className="diary-footer">
       <ul>
-        <li>
+        <li className="footer-icon">
           <a
             href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1"
             target="_blank"
@@ -25,7 +25,7 @@ const DiaryPageFooter = () => {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>
-        <li>
+        <li className="footer-icon">
           <a
             href="https://twitter.com/SLKhadeeja"
             target="_blank"
@@ -34,7 +34,7 @@ const DiaryPageFooter = () => {
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </li>
-        <li>
+        <li className="footer-icon"> 
           <a
             href="https://github.com/SLKhadeeja"
             target="_blank"
@@ -43,7 +43,7 @@ const DiaryPageFooter = () => {
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
-        <li>
+        <li className="footer-icon">
           <a
             href="https://www.linkedin.com/in/khadija-ladan/"
             target="_blank"
@@ -52,7 +52,7 @@ const DiaryPageFooter = () => {
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
-        <li>
+        <li className="footer-icon">
           <a
             href="https://www.instagram.com/_deedee_l/"
             target="_blank"
@@ -61,7 +61,7 @@ const DiaryPageFooter = () => {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
-        <li>
+        <li className="footer-icon">
           <a
             href="https://medium.com/@SLKhadeeja"
             target="_blank"
@@ -70,7 +70,7 @@ const DiaryPageFooter = () => {
             <FontAwesomeIcon icon={faMedium} />
           </a>
         </li>
-        <li>
+        <li className="footer-icon">
           <a
             href="https://web.facebook.com/khadijah.ladan.9"
             target="_blank"
@@ -79,7 +79,7 @@ const DiaryPageFooter = () => {
             <FontAwesomeIcon icon={faFacebook} />
           </a>
         </li>
-        <li>
+        <li className="footer-icon">
           <a href="https://dev.to/slkhadeeja" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faDev} />
           </a>

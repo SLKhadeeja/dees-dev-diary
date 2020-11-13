@@ -23,6 +23,10 @@ h2 {
     line-height: 50px;
 }
 
+ol > li {
+    color: var(--black);
+}
+
 .header-img {
     width: 100%;
 }

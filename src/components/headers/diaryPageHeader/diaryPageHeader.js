@@ -11,7 +11,7 @@ const DiaryPageHeader = () => {
         <h3>DEE'S DEV DIARY</h3>
         <div className="links">
           <Link to="/">
-            <FontAwesomeIcon class="diary-nav-item" icon={faHome} />
+            <FontAwesomeIcon className="diary-nav-item" icon={faHome} />
           </Link>
           <Link to="/articleList">
             <FontAwesomeIcon className="diary-nav-item" icon={faBook} />

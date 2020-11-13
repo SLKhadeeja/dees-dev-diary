@@ -15,7 +15,7 @@ ul {
     justify-content: center;
 }
 
-li {
+.footer-icon {
     margin: 5px 10px;
     color: var(--white);
     text-decoration: none;
@@ -23,7 +23,7 @@ li {
     font-size: 16px;
 }
 
-li:hover {
+.footer-icon:hover {
     color: var(--gold);
 }
 
