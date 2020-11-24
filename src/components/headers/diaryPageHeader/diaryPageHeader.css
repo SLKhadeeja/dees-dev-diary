@@ -2,7 +2,7 @@
     padding: 30px 100px;
     padding-bottom: 0;
     position: fixed;
-    background-color: var(--paperBrown);
+    background-color: var(--grey);
     width: 100vw;
     top: 0;
 }

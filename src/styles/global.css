@@ -52,7 +52,8 @@ a {
 }
 
 .diary-page {
-  background-color: var(--paperBrown);
+  background-color: var(--grey);
+  color: var(--white);
   padding-top: 60px;
 
 }

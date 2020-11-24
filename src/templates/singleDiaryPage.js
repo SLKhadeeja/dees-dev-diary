@@ -12,6 +12,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }
@@ -25,7 +26,7 @@ const DiaryPage = ({ data }) => {
     <div className="diary-page">
       <Helmet title={`Dee's Dev Diary - ${post.frontmatter.title}`} defer={false} />
       <DiaryPageHeader />
-      <DiaryBody title={post.frontmatter.title} html={{ __html: post.html }} />
+      <DiaryBody date={post.frontmatter.date} title={post.frontmatter.title} html={{ __html: post.html }} />
       <Footer />
       <DiaryPageFooter />
     </div>

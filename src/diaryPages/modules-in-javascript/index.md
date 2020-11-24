@@ -3,7 +3,7 @@ id: "2"
 coverImage: "modules-in-javascript.jpeg"
 title: "Modules in JavaScript"
 author: "DeeDee"
-date: "10 Jul, 2020"
+date: "10 July, 2020"
 description: "A beginners guide to modules in JavaScript"
 ---
 

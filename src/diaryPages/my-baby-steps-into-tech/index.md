@@ -3,7 +3,7 @@ id: "1"
 coverImage: "my-baby-steps-into-tech.jpg"
 title: "My baby steps into Tech"
 author: "DeeDee"
-date: "19 Jun, 2020"
+date: "19 June, 2020"
 description: "An inside story on how I started out in tech. The beginning of my journey as a developer"
 ---
 
