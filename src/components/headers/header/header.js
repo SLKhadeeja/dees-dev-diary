@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faBook, faUser } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../../../assets/images/logo.png";
 import "./header.css";
 
 const Header = ({ show }) => {
   return (
     <nav className="navbar">
       <div>
+        <img src={Logo} alt="blog logo" />
         <h1 className="title">DEE'S DEV DIARY</h1>
       </div>
       <ul className="nav-items">

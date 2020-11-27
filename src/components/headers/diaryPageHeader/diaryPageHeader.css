@@ -7,6 +7,15 @@
     top: 0;
 }
 
+.diary-header-title {
+    display: flex;
+    align-items: center;
+}
+
+.diary-header-title > h3 {
+    margin: 0 5px;
+}
+
 h3 {
     margin: 0;
     font-size: 1.5em;

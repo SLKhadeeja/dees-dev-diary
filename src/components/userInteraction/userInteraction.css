@@ -1,0 +1,63 @@
+.interaction-section {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.heart-star {
+  display: flex;
+}
+
+.interaction-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 20px;
+  border: solid 1px transparent;
+}
+
+.interaction-icon:hover {
+  border: solid 1px;
+}
+
+.single-interaction-div {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.count {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+.heart-count {
+  color: #f03030;
+}
+
+.star-count {
+  color: #f3ef1f;
+}
+
+.heart:hover {
+  border-color: #f03030;
+  background-color: #f0303052;
+}
+
+.star:hover {
+  border-color: #f3ef1f;
+  background-color:  #f3ef1f52;
+}
+
+@media screen and (max-width: 480px) {
+  .interaction-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+}

@@ -10,9 +10,9 @@ export const pageQuery = graphql`
   query MyQuery {
     diary: allMarkdownRemark {
       posts: nodes {
-          fields {
-            slug
-          }
+        fields {
+          slug
+        }
         frontmatter {
           id
           date

@@ -20,14 +20,29 @@ module.exports = {
           {
             resolve: "gatsby-remark-prismjs",
             options: {},
-          }
+          },
         ],
       },
     },
     {
       resolve: `gatsby-remark-shiki`,
       options: {
-        theme: 'slack-theme-dark-mode',
+        theme: "slack-theme-dark-mode",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyDO0nT3P2qQeeWFeAt2Z-Yx4iXr04N4u3I",
+          authDomain: "dees-dev-diary.firebaseapp.com",
+          databaseURL: "https://dees-dev-diary.firebaseio.com",
+          projectId: "dees-dev-diary",
+          storageBucket: "dees-dev-diary.appspot.com",
+          messagingSenderId: "125711597226",
+          appId: "1:125711597226:web:93bdbcc3fae3325d7a5ad3",
+          measurementId: "G-DBHVQWHBY9",
+        },
       },
     },
   ],

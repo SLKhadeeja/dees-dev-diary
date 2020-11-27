@@ -18,9 +18,9 @@ I have always been fascinated with technology. I loved puzzles and anything with
 ##### Hello world and Basics
 
 ```c++
-#include <stdio.h>    
+#include <stdio.h>
 int main()
-{ 
+{
     // Displays the string inside quotations
         printf("Hello World");
             return 0;

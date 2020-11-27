@@ -34,7 +34,7 @@ const DiaryPageFooter = () => {
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </li>
-        <li className="footer-icon"> 
+        <li className="footer-icon">
           <a
             href="https://github.com/SLKhadeeja"
             target="_blank"
