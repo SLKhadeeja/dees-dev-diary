@@ -15,7 +15,12 @@ const UserInteraction = props => {
 
       .collection(`hearts`)
       .onSnapshot(snapshot => {
-        console.log(snapshot);
+        const posts = snapshot.docs
+          .filter(doc => doc.data().slug === slug)
+          .map(doc => {
+            return { id: doc.id, ...doc.data() };
+          });
+        setHearts(posts[0]);
       });
   }, [slug]);
 
@@ -26,7 +31,7 @@ const UserInteraction = props => {
           <div className="interaction-icon heart">
             <FontAwesomeIcon icon={faHeart} />
           </div>
-          <p className="heart-count count">5</p>
+          <p className="heart-count count">{hearts.amount}</p>
         </div>
 
         <div className="single-interaction-div">

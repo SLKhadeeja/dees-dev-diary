@@ -13,7 +13,7 @@
 }
 
 .diary-header-title > h3 {
-    margin: 0 5px;
+    margin: 0 20px;
 }
 
 h3 {
@@ -62,6 +62,16 @@ hr {
     .diary-header {
         padding: 10px 0;
         padding-bottom: 0;
+    }
+
+    .main-header {
+        width: unset;
+        margin: 0 10px;
+    }
+
+    .diary-header-title {
+        width: 100%;
+        justify-content: space-around;
     }
 
     hr {
