@@ -7,20 +7,21 @@ import "./userInteraction.css";
 
 const UserInteraction = props => {
   const { slug } = props;
-  const [hearts, setHearts] = React.useState(null);
+  const [userInteraction, setUserInteraction] = React.useState(null);
 
   React.useEffect(() => {
     firebase
       .firestore()
 
-      .collection(`hearts`)
+      .collection(`userInteraction`)
       .onSnapshot(snapshot => {
         const posts = snapshot.docs
           .filter(doc => doc.data().slug === slug)
           .map(doc => {
             return { id: doc.id, ...doc.data() };
           });
-        setHearts(posts[0]);
+        setUserInteraction(posts[0]);
+        console.log(posts[0]);
       });
   }, [slug]);
 
@@ -31,14 +32,14 @@ const UserInteraction = props => {
           <div className="interaction-icon heart">
             <FontAwesomeIcon icon={faHeart} />
           </div>
-          <p className="heart-count count">{hearts.amount}</p>
+          <p className="heart-count count">{userInteraction.hearts}</p>
         </div>
 
         <div className="single-interaction-div">
           <div className="interaction-icon star">
             <FontAwesomeIcon icon={faStar} />
           </div>
-          <p className="star-count count">14</p>
+          <p className="star-count count">{userInteraction.stars}</p>
         </div>
       </div>
     </div>
