@@ -18,14 +18,8 @@
     margin: 10px;
 }
 
-@font-face {
-    font-family: cedarville;
-    src: url(../../assets/fonts/CedarvilleCursive-Regular.ttf);
-}
-
 .quote-banner > p {
     color: var(--white);
-    font-family: cedarville;
     font-size: 1.7rem;
 }
 

@@ -32,14 +32,14 @@ const UserInteraction = props => {
           <div className="interaction-icon heart">
             <FontAwesomeIcon icon={faHeart} />
           </div>
-          <p className="heart-count count">{userInteraction.hearts}</p>
+          <p className="heart-count count">1</p>
         </div>
 
         <div className="single-interaction-div">
           <div className="interaction-icon star">
             <FontAwesomeIcon icon={faStar} />
           </div>
-          <p className="star-count count">{userInteraction.stars}</p>
+          <p className="star-count count">2</p>
         </div>
       </div>
     </div>
