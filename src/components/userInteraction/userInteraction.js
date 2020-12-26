@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import firebase from "gatsby-plugin-firebase";
 import "firebase/firestore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +7,7 @@ import "./userInteraction.css";
 
 const UserInteraction = props => {
   const { slug } = props;
-  const [userInteraction, setUserInteraction] = React.useState(null);
+  const [userInteraction, setUserInteraction] = useState();
 
   React.useEffect(() => {
     firebase
@@ -21,7 +21,6 @@ const UserInteraction = props => {
             return { id: doc.id, ...doc.data() };
           });
         setUserInteraction(posts[0]);
-        console.log(posts[0]);
       });
   }, [slug]);
 
@@ -32,14 +31,14 @@ const UserInteraction = props => {
           <div className="interaction-icon heart">
             <FontAwesomeIcon icon={faHeart} />
           </div>
-          <p className="heart-count count">1</p>
+  <p className="heart-count count">{userInteraction.hearts}</p>
         </div>
 
         <div className="single-interaction-div">
           <div className="interaction-icon star">
             <FontAwesomeIcon icon={faStar} />
           </div>
-          <p className="star-count count">2</p>
+          <p className="star-count count">{userInteraction.stars}</p>
         </div>
       </div>
     </div>
