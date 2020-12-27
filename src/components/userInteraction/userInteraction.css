@@ -54,6 +54,14 @@
   background-color:  #f3ef1f52;
 }
 
+.clickedHeart {
+  color:  #f03030;
+}
+
+.clickedStar {
+  color:  #f3ef1f;
+}
+
 @media screen and (max-width: 480px) {
   .interaction-icon {
     width: 20px;

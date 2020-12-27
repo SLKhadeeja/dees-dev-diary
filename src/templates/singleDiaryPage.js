@@ -11,6 +11,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
+        id
         title
         date
       }
@@ -33,6 +34,7 @@ const DiaryPage = ({ data }) => {
       />
       <DiaryPageHeader />
       <DiaryBody
+        id={post.frontmatter.id}
         date={post.frontmatter.date}
         title={post.frontmatter.title}
         html={{ __html: post.html }}

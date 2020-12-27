@@ -5,7 +5,7 @@ import "./diaryBody.css";
 import { faPenAlt } from "@fortawesome/free-solid-svg-icons";
 
 const DiaryBody = props => {
-  const { title, date, html, slug } = props;
+  const { id, title, date, html, slug } = props;
 
   return (
     <div className="diary-body">
@@ -14,7 +14,7 @@ const DiaryBody = props => {
         <FontAwesomeIcon icon={faPenAlt} /> {date}
       </p>
       <div className="main-content" dangerouslySetInnerHTML={html} />
-      <UserInteraction slug={slug} />
+      <UserInteraction slug={slug} id={id} />
     </div>
   );
 };
