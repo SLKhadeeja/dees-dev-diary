@@ -1,6 +1,6 @@
 # Dee's Dev Diary
 
-An blog/diary built with gatsby JS to document my progress and practice my technical writing.
+A blog/diary built with gatsby JS to document my progress and practice my technical writing.
 
 ### Contributions
 Contribution are welcome.
