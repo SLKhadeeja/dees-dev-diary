@@ -12,7 +12,7 @@
     margin: 2em 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Dancing Script', cursive;
     font-weight: 400;
 }
@@ -46,6 +46,12 @@ ol > li {
 
 .header-img {
     width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
 }
 
 @media screen and (max-width: 480px) {

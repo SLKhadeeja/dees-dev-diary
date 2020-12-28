@@ -15,7 +15,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const DiaryPageFooter = () => {
   return (
     <footer className="diary-footer">
-      <ul>
+      <ul className="footer-profiles">
         <li className="footer-icon">
           <a
             href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1"

@@ -5,14 +5,21 @@ footer, .diary-footer {
     background-color: var(--primaryColor);
 }
 
+.nav {
+    flex-flow: row;
+    margin: 0;
+}
+
 .diary-footer {
     display: none;
 }
 
-ul {
+.footer-profiles {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: row;
+    margin: 10px 0;
 }
 
 .footer-icon {

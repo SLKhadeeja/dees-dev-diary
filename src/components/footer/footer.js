@@ -29,7 +29,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <ul>
+      <ul className="footer-profiles">
         <li className="footer-icon">
           <a
             href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=khadijaladan67@gmail.com&tf=1"
