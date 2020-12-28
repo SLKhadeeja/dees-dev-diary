@@ -60,7 +60,7 @@ ol > li {
     display: flex;
     flex-flow: column;
     align-items: baseline;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 @media screen and (max-width: 480px) {
