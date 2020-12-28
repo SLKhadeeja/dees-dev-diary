@@ -19,7 +19,6 @@ footer, .diary-footer {
     align-items: center;
     justify-content: center;
     flex-flow: row;
-    margin: 10px 0;
 }
 
 .footer-icon {

@@ -29,6 +29,14 @@ h5 {
     font-size: 12px;
 }
 
+img {
+    max-width: 100%;
+}
+
+a:hover {
+    color: var(--gold);
+}
+
 h2 {
     max-width: 100%;
     font-size: 2.5em;
@@ -48,10 +56,11 @@ ol > li {
     width: 100%;
 }
 
-ul {
+ ul {
     display: flex;
     flex-flow: column;
     align-items: baseline;
+    padding: 0 20px;
 }
 
 @media screen and (max-width: 480px) {
