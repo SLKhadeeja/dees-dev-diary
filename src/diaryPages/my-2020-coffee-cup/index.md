@@ -52,7 +52,7 @@ In a less than half a year, I've worked with
 
 It's a little too cliche if I say I had no sad days, but I really didn't. I'm having the time of my life and I don't plan on slowing down.
 
-##### Coffee side
+##### Coffee side ☕
 
 The lessons I got out of this year 
 + Communities are great and we should all try to utilize them.

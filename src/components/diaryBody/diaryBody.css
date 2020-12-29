@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h5 {
-    font-size: 1.3em;
+    font-size: 2em;
     margin: 20px 0;
     text-transform: capitalize;
 }
@@ -33,13 +33,17 @@ img {
     max-width: 100%;
 }
 
+.main-content > ul > li > a {
+    text-decoration: underline;
+}
+
 a:hover {
     color: var(--gold);
 }
 
 h2 {
     max-width: 100%;
-    font-size: 2.5em;
+    font-size: 3em;
     display: flex;
     word-break: break-word;
     flex-flow: nowrap;
@@ -61,6 +65,11 @@ ol > li {
     flex-flow: column;
     align-items: baseline;
     padding: 0 40px;
+    font-size: 15px;
+}
+
+p > strong {
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 480px) {
@@ -77,12 +86,12 @@ ol > li {
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 2em;
         line-height: 30px;
         margin: 1.5em 0;
     }
 
     h5 {
-        font-size: 1em;
+        font-size: 1.7em;
     }
 }
