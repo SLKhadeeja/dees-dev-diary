@@ -5,6 +5,7 @@ import Profiles from "../components/profiles/profiles";
 import useModal from "../utils/useModal";
 import Header from "../components/headers/header/header";
 import DiaryPreviewCard from "../components/diaryPreviewCard/diaryPreviewCard";
+import { sortByDate } from "../utils/sortByDate";
 
 export const pageQuery = graphql`
   query MyQuery {
@@ -34,7 +35,7 @@ const ArticleList = ({ data }) => {
     <div className="index-page">
       <Header show={toggle} />
       <div className="article-list">
-        {posts.map(post => (
+        {sortByDate(posts).map(post => (
           <DiaryPreviewCard
             key={post.frontmatter.id}
             coverImage={post.frontmatter.coverImage}
