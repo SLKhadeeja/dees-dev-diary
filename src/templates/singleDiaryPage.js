@@ -14,6 +14,7 @@ export const query = graphql`
         id
         title
         date
+        description
       }
       fields {
         slug
@@ -28,10 +29,10 @@ const DiaryPage = ({ data }) => {
 
   return (
     <div className="diary-page">
-      <Helmet
-        title={`Dee's Dev Diary - ${post.frontmatter.title}`}
-        defer={false}
-      />
+      <Helmet>
+        <title>Dee's Dev Diary - {post.frontmatter.title}</title>
+        <meta name="description" content={post.frontmatter.description}></meta>
+      </Helmet>
       <DiaryPageHeader />
       <DiaryBody
         id={post.frontmatter.id}

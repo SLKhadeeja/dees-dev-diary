@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Dee's Dev Diary`,
+    siteUrl: `https://dees-dev-diary.netlify.app/`,
+    description: `Documenting Milestones`,
     author: `Khadija Ladan`,
   },
   plugins: [

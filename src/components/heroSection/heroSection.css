@@ -17,6 +17,7 @@
 .hero-message {
     font-size: 2.8rem;
     color: var(--white);
+    margin: 0.3em 0;
 }
 
 @media screen and (max-width: 480px){
