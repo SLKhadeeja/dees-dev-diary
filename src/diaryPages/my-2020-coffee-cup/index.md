@@ -22,7 +22,7 @@ I was sometimes productive, doing some web scraping with python but somehow the 
 
 As I always insist that communities and friends are a good thing, especially in tech. I voiced out my concerns about being idle to some friends and I was confronted with the question, what is your career choice? And in my exact words, I was like " I want to code, **I guess**" . Yeah, pretty vague answer 🤦🏽‍♀️. I was told, " Don't guess, know ".
 
-Anyways, to cut it short, I had to confront my career choices and ended up choosing Frontend development, mostly because I was already on that path and I loved color.
+Anyways, to cut it short, I had to confront my career choices and ended up choosing Frontend development, mostly because I was already on that path and I loved colors.
 ( Yes, I'm a child 😌). And so began my journey towards the path of JavaScript, HTML and my best worst love CSS.
 
 _🎶Inserts quest soundtrack preferably from The Hobbit: an unexpected journey🎶_
