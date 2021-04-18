@@ -36,14 +36,14 @@ module.exports = {
       resolve: "gatsby-plugin-firebase",
       options: {
         credentials: {
-          apiKey: "AIzaSyDO0nT3P2qQeeWFeAt2Z-Yx4iXr04N4u3I",
+          apiKey: process.env.API_KEY || "none",
           authDomain: "dees-dev-diary.firebaseapp.com",
           databaseURL: "https://dees-dev-diary.firebaseio.com",
           projectId: "dees-dev-diary",
           storageBucket: "dees-dev-diary.appspot.com",
-          messagingSenderId: "125711597226",
-          appId: "1:125711597226:web:93bdbcc3fae3325d7a5ad3",
-          measurementId: "G-DBHVQWHBY9",
+          messagingSenderId: process.env.MESSAGING_SENDER_ID || "none",
+          appId: process.env.APP_ID || "none",
+          measurementId: process.env.MEASUREMENT_ID || "none",
         },
       },
     },
