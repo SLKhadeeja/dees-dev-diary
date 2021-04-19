@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useContext, useEffect} from "react";
+import { FirebaseContext } from "gatsby-plugin-firebase"
 import { graphql } from "gatsby";
 import Footer from "../components/footer/footer";
 import Profiles from "../components/profiles/profiles";
@@ -6,6 +7,7 @@ import useModal from "../utils/useModal";
 import Header from "../components/headers/header/header";
 import DiaryPreviewCard from "../components/diaryPreviewCard/diaryPreviewCard";
 import { sortByDate } from "../utils/sortByDate";
+import { useFirebase } from "gatsby-plugin-firebase";
 
 export const pageQuery = graphql`
   query MyQuery {
@@ -30,6 +32,18 @@ export const pageQuery = graphql`
 const ArticleList = ({ data }) => {
   const { isShowing, toggle } = useModal();
   const { posts } = data.diary;
+
+  const firebase = useContext(FirebaseContext)
+useEffect(() => {
+    if (!firebase) {
+      return
+    }
+    
+    firebase
+      .analytics()
+      .logEvent("visited_about_us")
+  }, [firebase])
+
 
   return (
     <div className="index-page">

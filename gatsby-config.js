@@ -35,12 +35,22 @@ module.exports = {
     {
       resolve: "gatsby-plugin-firebase",
       options: {
+        features: {     
+          auth: false,       
+          database: false,  
+          firestore: false,
+          storage: false,    
+          messaging: false, 
+          functions: false,  
+          performance: false, 
+          analytics:true,    
+         }, 
         credentials: {
           apiKey: process.env.API_KEY || "none",
-          authDomain: "dees-dev-diary.firebaseapp.com",
-          databaseURL: "https://dees-dev-diary.firebaseio.com",
-          projectId: "dees-dev-diary",
-          storageBucket: "dees-dev-diary.appspot.com",
+          authDomain: process.env.AUTH_DOMAIN || "none",
+          databaseURL: process.env.DATABASE_URL || "none",
+          projectId: process.env.PROJECT_ID || "none",
+          storageBucket: process.env.STORAGE_BUCKET || "none",
           messagingSenderId: process.env.MESSAGING_SENDER_ID || "none",
           appId: process.env.APP_ID || "none",
           measurementId: process.env.MEASUREMENT_ID || "none",
