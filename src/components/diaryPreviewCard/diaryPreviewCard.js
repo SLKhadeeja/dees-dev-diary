@@ -16,7 +16,7 @@ const DiaryPreviewCard = props => {
         <h3 className="card-title">{title}</h3>
         <p className="diary-preview">{description}</p>
         <Link to={slug}>
-          <Button>Read more</Button>
+          <Button customIdStyle="read-more">Read more</Button>
         </Link>
       </div>
     </div>

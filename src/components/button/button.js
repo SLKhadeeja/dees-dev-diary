@@ -1,8 +1,12 @@
 import React from "react";
 import "./button.css";
 
-const Button = props => {
-  return <button className="primary-button-type">{props.children}</button>;
+const Button = ({ customIdStyle, children }) => {
+  return (
+    <button id={`${customIdStyle}`} className="primary-button-type">
+      {children}
+    </button>
+  );
 };
 
 export default Button;

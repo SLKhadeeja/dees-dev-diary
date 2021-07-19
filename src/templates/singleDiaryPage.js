@@ -1,12 +1,12 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
-import DiaryPageHeader from "../components/headers/diaryPageHeader/diaryPageHeader";
+import DiaryPageNav from "../components/navbars/diaryPageNav";
 import DiaryBody from "../components/diaryBody/diaryBody";
 import Footer from "../components/footer/footer";
 import DiaryPageFooter from "../components/footer/diaryPageFooter";
 import firebase from "gatsby-plugin-firebase";
-import 'firebase/analytics';
+import "firebase/analytics";
 
 export const query = graphql`
   query BlogQuery($slug: String!) {
@@ -30,10 +30,8 @@ const DiaryPage = ({ data }) => {
   const slug = data.markdownRemark.fields.slug;
 
   useEffect(() => {
-    firebase
-      .analytics()
-      .logEvent(`visited a diary page`)
-  }, [])
+    firebase.analytics().logEvent(`visited a diary page`);
+  }, []);
 
   return (
     <div className="diary-page">
@@ -41,7 +39,7 @@ const DiaryPage = ({ data }) => {
         <title>Dee's Dev Diary - {post.frontmatter.title}</title>
         <meta name="description" content={post.frontmatter.description}></meta>
       </Helmet>
-      <DiaryPageHeader />
+      <DiaryPageNav />
       <DiaryBody
         id={post.frontmatter.id}
         date={post.frontmatter.date}

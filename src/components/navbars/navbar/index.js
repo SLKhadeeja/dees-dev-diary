@@ -3,9 +3,9 @@ import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faBook, faUser } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../../assets/images/logo.png";
-import "./header.css";
+import "./style.css";
 
-const Header = ({ show }) => {
+const Navbar = ({ show }) => {
   return (
     <nav className="navbar">
       <div>
@@ -13,16 +13,6 @@ const Header = ({ show }) => {
         <h1 className="title">DEE'S DEV DIARY</h1>
       </div>
       <ul className="nav-items">
-        <li className="nav-item">
-          <Link to="/">
-            <FontAwesomeIcon icon={faHome} /> <p>Home</p>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/articleList">
-            <FontAwesomeIcon icon={faBook} /> <p>Articles</p>
-          </Link>
-        </li>
         <li className="nav-item profiles">
           <a href="#profiles" onClick={show} onKeyDown={show}>
             <FontAwesomeIcon icon={faUser} /> <p>Profiles</p>
@@ -33,4 +23,4 @@ const Header = ({ show }) => {
   );
 };
 
-export default Header;
+export default Navbar;

@@ -16,19 +16,6 @@ import { Link } from "gatsby";
 const Footer = () => {
   return (
     <footer>
-      <ul className="nav">
-        <li className="footer-icon">
-          <Link to="/">
-            <FontAwesomeIcon icon={faHome} /> Home
-          </Link>
-        </li>
-        <li className="footer-icon">
-          <Link to="/articleList">
-            <FontAwesomeIcon icon={faBook} /> Articles
-          </Link>
-        </li>
-      </ul>
-
       <ul className="footer-profiles">
         <li className="footer-icon">
           <a
