@@ -14,7 +14,9 @@ import "./profiles.css";
 
 const Profiles = ({ hide }) => {
   return (
-    <div id="profiles" className="profiles-container">
+    <div id="profiles" className="profiles-background" onClick={hide} aria-label="close modal"
+    onKeyDown={hide}>
+      <div className="content">
       <div className="top">
         <button
           className="close-button"
@@ -108,6 +110,7 @@ const Profiles = ({ hide }) => {
             <FontAwesomeIcon icon={faInstagram} /> _deedee_l
           </a>
         </p>
+      </div>
       </div>
     </div>
   );

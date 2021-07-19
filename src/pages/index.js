@@ -1,31 +1,61 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
-import HeroSection from "../components/heroSection/heroSection";
-import Introduction from "../components/introduction/introduction";
+import { graphql } from "gatsby";
 import Footer from "../components/footer/footer";
 import Profiles from "../components/profiles/profiles";
 import useModal from "../utils/useModal";
+import Navbar from "../components/navbars/navbar";
+import DiaryPreviewCard from "../components/diaryPreviewCard/diaryPreviewCard";
+import { sortByDate } from "../utils/sortByDate";
 import firebase from "gatsby-plugin-firebase";
-import 'firebase/analytics';
+import "firebase/analytics";
 
-const Home = () => {
+export const pageQuery = graphql`
+  query MyQuery {
+    diary: allMarkdownRemark {
+      posts: nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          id
+          date
+          title
+          author
+          description
+          coverImage
+        }
+      }
+    }
+  }
+`;
+
+const ArticleList = ({ data }) => {
   const { isShowing, toggle } = useModal();
+  const { posts } = data.diary;
 
   useEffect(() => {
-    firebase
-      .analytics()
-      .logEvent("visited Home page")
-  }, [])
+    firebase.analytics().logEvent(`visited main page`);
+  }, []);
 
   return (
     <div className="index-page">
-      <Helmet title="Dee's Dev Diary" defer={false} />
-      <HeroSection show={toggle} />
-      <Introduction />
+      {!isShowing && <Navbar show={toggle} />}
+      <div className="article-list">
+        {sortByDate(posts).map(post => (
+          <DiaryPreviewCard
+            key={post.frontmatter.id}
+            coverImage={post.frontmatter.coverImage}
+            title={post.frontmatter.title}
+            date={post.frontmatter.date}
+            description={post.frontmatter.description}
+            slug={post.fields.slug}
+          />
+        ))}
+      </div>
       {isShowing && <Profiles hide={toggle} />}
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default ArticleList;

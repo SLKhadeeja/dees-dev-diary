@@ -17,8 +17,9 @@ footer, .diary-footer {
 .footer-profiles {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-flow: row;
+    width: 100%;
 }
 
 .footer-icon {
@@ -26,7 +27,7 @@ footer, .diary-footer {
     color: var(--white);
     text-decoration: none;
     list-style: none;
-    font-size: 16px;
+    font-size: 1.5em;
 }
 
 .footer-icon:hover {
@@ -48,5 +49,13 @@ footer, .diary-footer {
         padding: 0 30px;
         margin: 2px;
         font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
 }

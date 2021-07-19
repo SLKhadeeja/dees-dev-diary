@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
 import { faBook, faHome } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../../assets/images/logo.png";
-import "./diaryPageHeader.css";
+import "./style.css";
 
-const DiaryPageHeader = () => {
+const DiaryPageNav = () => {
   return (
     <div className="diary-header">
       <div className="main-header">
@@ -27,4 +27,4 @@ const DiaryPageHeader = () => {
   );
 };
 
-export default DiaryPageHeader;
+export default DiaryPageNav;

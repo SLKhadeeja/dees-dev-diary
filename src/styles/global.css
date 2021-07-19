@@ -12,6 +12,7 @@
   --red: 	#800000;
   --boxShadowColor: #0080808c;
   --grey: #222121;
+  --overlay: rgba(34, 33, 33, 0.753);
 }
 
 html {
@@ -66,8 +67,7 @@ a {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin-top: 20px;
+  margin: 10% 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -88,4 +88,3 @@ a {
     height: fit-content;
   }
 }
-
